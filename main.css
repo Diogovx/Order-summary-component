@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/pattern-background-mobile.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+main{
+    width: 90%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.08);
+}
+
+main > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+main .center{
+    padding: 10%;
+    text-align: center;
+}
+
+main .center h1{
+    margin-bottom: 10%;
+    font-size: 25px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+main .center > p{
+    line-height: 25px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 10%;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+main section div{
+    margin-right: 5%;
+}
+
+main section .plan{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+main section .price{
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+main section a{
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    transition: color 0.2s;
+}
+
+main button{
+    display: block;
+    margin: 3% auto;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 13px;
+    padding: 5%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main .payment{
+    margin-top: 10%;
+    background-color: hsl(245, 75%, 52%);
+    color: #FFFFFF;
+    box-shadow: 1px 1px 10px hsl(245, 75%, 52%);
+    transition: background-color 0.2s;
+    
+}
+main .cancel{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    transition: color 0.2s;
+}
+
+@media (min-width: 1440px){
+    body{
+        background: url('/images/pattern-background-desktop.svg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: hsl(225, 100%, 94%);
+    }
+    main{
+        width: 25%;
+    }
+    main section a{
+        color: hsl(223, 47%, 23%);
+    }
+    main .payment:hover{
+        background-color: #716DF2;
+    }
+    main .cancel:hover{
+        color: hsl(223, 47%, 23%);
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
